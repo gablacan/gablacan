@@ -1,9 +1,85 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Mon site GitHub</title>
-  </head>
-  <body>
-    <h1>Bienvenue sur mon site !</h1>
-  </body>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prénom Nom – E-portfolio</title>
+<meta name="description" content="E-portfolio d'étudiant ingénieur en mécanique des fluides.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Source+Serif+4:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<header class="bar">
+  <a class="logo" href="#home">Prénom Nom</a>
+  <nav aria-label="Navigation principale">
+    <a href="#education">Formation</a>
+    <a href="#projects">Projets</a>
+    <a href="#experience">Expériences</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="theme" type="button" aria-label="Changer de thème clair / sombre"></button>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <svg class="flow" viewBox="0 0 800 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <circle cx="400" cy="150" r="38" class="body"/>
+    <path d="M0 60 C250 60 300 40 400 40 S550 60 800 60"/>
+    <path d="M0 105 C250 105 330 80 400 80 S550 105 800 105"/>
+    <path d="M0 150 H340"/><path d="M460 150 H800"/>
+    <path d="M0 195 C250 195 330 220 400 220 S550 195 800 195"/>
+    <path d="M0 240 C250 240 300 260 400 260 S550 240 800 240"/>
+  </svg>
+  <div class="wrap">
+    <h1>Prénom Nom</h1>
+    <p class="lead">Étudiant ingénieur en mécanique des fluides à [Ton école]. Je m'intéresse à [ex. la simulation numérique d'écoulements et à l'aérodynamique].</p>
+    <ul class="summary">
+      <li><a href="#education"><strong>Formation</strong><span>Mon parcours et mes certifications : [1 phrase].</span></a></li>
+      <li><a href="#projects"><strong>Projets</strong><span>Simulations, études et travaux réalisés : [1 phrase].</span></a></li>
+      <li><a href="#experience"><strong>Expériences</strong><span>Stages et expériences professionnelles : [1 phrase].</span></a></li>
+      <li><a href="#contact"><strong>Contact</strong><span>Me joindre pour échanger ou collaborer.</span></a></li>
+    </ul>
+  </div>
+</section>
+
+<section id="education"><div class="wrap">
+  <h2>Formation</h2>
+  <div class="item"><time>2023 – 2026</time><div><h3>Cycle ingénieur, mécanique des fluides</h3><p>[École]. [Spécialité, matières principales : turbulence, transferts thermiques, CFD…]</p></div></div>
+  <div class="item"><time>2021 – 2023</time><div><h3>Classes préparatoires / Licence</h3><p>[Établissement, filière.]</p></div></div>
+  <h3 class="sub">Certifications</h3>
+  <div class="item"><time>2025</time><div><h3>[Nom de la certification]</h3><p>[Organisme. Lien vers le certificat si disponible.]</p></div></div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <h2>Projets</h2>
+  <div class="grid">
+    <article class="card"><img src="images/projet1.jpg" alt="" loading="lazy"><h3>Simulation d'un écoulement autour d'un cylindre</h3><p>[Contexte, outils (OpenFOAM, ANSYS Fluent, Python…), résultat obtenu.]</p><a href="#">Voir le projet</a></article>
+    <article class="card"><img src="images/projet2.jpg" alt="" loading="lazy"><h3>[Titre du projet 2]</h3><p>[Description courte.]</p><a href="#">Voir le projet</a></article>
+    <article class="card"><img src="images/projet3.jpg" alt="" loading="lazy"><h3>[Titre du projet 3]</h3><p>[Description courte.]</p><a href="#">Voir le projet</a></article>
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <h2>Expériences</h2>
+  <div class="item"><time>Été 2025</time><div><h3>Stage ingénieur, [Entreprise]</h3><p>[Missions, outils utilisés, résultats chiffrés si possible.]</p></div></div>
+  <div class="item"><time>2024</time><div><h3>[Poste ou engagement associatif]</h3><p>[Ce que tu as fait et appris.]</p></div></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2>Contact</h2>
+  <p>Une question, une opportunité de stage ou de projet ? Écris-moi.</p>
+  <ul class="links">
+    <li><a href="mailto:ton.email@exemple.fr">ton.email@exemple.fr</a></li>
+    <li><a href="https://www.linkedin.com/in/ton-profil" rel="noopener">LinkedIn</a></li>
+    <li><a href="https://github.com/ton-pseudo" rel="noopener">GitHub</a></li>
+  </ul>
+</div></section>
+</main>
+
+<footer><div class="wrap">© <span id="year"></span> Prénom Nom</div></footer>
+<script src="script.js"></script>
+</body>
 </html>
