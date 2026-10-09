@@ -10,3 +10,10 @@ btn.addEventListener('click', () => {
   try { localStorage.setItem('theme', next); } catch (e) {}
 });
 document.getElementById('year').textContent = new Date().getFullYear();
+if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.documentElement.classList.add('js-reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: .12 });
+  document.querySelectorAll('section:not(.hero) .wrap').forEach(el => io.observe(el));
+}
