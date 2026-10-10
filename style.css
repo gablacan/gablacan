@@ -48,19 +48,19 @@ footer{padding:2rem 0;color:var(--muted);font-size:.9rem}
 @media (max-width:640px){nav{display:none}.item{grid-template-columns:1fr;gap:.2rem}}
 @media (prefers-reduced-motion:reduce){.flow path{animation:none}html{scroll-behavior:auto}}
 body, .bar, .card, .summary a, #theme, section, .item {
-  transition: background-color .35s ease, color .35s ease, border-color .35s ease;
+  transition: background-color .55s ease, color .55s ease, border-color .55s ease;
 }
 .flow path, .flow .body {
-  transition: stroke .35s ease, fill .35s ease;
+  transition: stroke .45s ease, fill .45s ease;
 }
 @keyframes rise {
   from { opacity: 0; transform: translateY(14px); }
   to   { opacity: 1; transform: none; }
 }
 .hero .wrap > * {
-  animation: rise .7s ease both;
+  animation: rise .8s ease both;
 }
-.hero .wrap > :nth-child(2) { animation-delay: .12s; }
-.hero .wrap > :nth-child(3) { animation-delay: .24s; }
-.js-reveal section:not(.hero) .wrap { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+.hero .wrap > :nth-child(2) { animation-delay: .2s; }
+.hero .wrap > :nth-child(3) { animation-delay: .34s; }
+.js-reveal section:not(.hero) .wrap { opacity: 0; transform: translateY(18px); transition: opacity .8s ease, transform .8s ease; }
 .js-reveal section:not(.hero) .wrap.in { opacity: 1; transform: none; }
