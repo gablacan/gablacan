@@ -66,10 +66,10 @@ body, .bar, .card, .summary a, #theme, section, .item {
 .js-reveal section:not(.hero) .wrap.in { opacity: 1; transform: none; }
 
 .btn-cv {
-  position: fixed; /* Ou 'fixed' si tu veux qu'il reste visible en scrollant */
+  position: absolute; /* Ou 'fixed' si tu veux qu'il reste visible en scrollant */
   top: 15px;
-  left: 150px;
-  background-color: #2E5E3C; 
+  left: 250px;
+  background-color: #007bff; 
   color: white; 
   padding: 10px 15px; 
   border-radius: 5px; 
@@ -81,5 +81,5 @@ body, .bar, .card, .summary a, #theme, section, .item {
 
 /* Effet au survol de la souris */
 .btn-cv:hover {
-  background-color: #147D39; 
+  background-color: #0056b3; 
 }
