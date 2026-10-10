@@ -67,11 +67,11 @@ body, .bar, .card, .summary a, #theme, section, .item {
 
 .btn-cv {
   position: fixed; /* Ou 'fixed' si tu veux qu'il reste visible en scrollant */
-  top: 20px;
-  left: 80px;
+  top: 15px;
+  left: 150px;
   background-color: #2E5E3C; 
-  color: black; 
-  padding: 10px 20px; 
+  color: white; 
+  padding: 10px 15px; 
   border-radius: 5px; 
   text-decoration: none; 
   font-weight: bold;
