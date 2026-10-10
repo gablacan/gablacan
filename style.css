@@ -64,3 +64,22 @@ body, .bar, .card, .summary a, #theme, section, .item {
 .hero .wrap > :nth-child(3) { animation-delay: .34s; }
 .js-reveal section:not(.hero) .wrap { opacity: 0; transform: translateY(18px); transition: opacity .8s ease, transform .8s ease; }
 .js-reveal section:not(.hero) .wrap.in { opacity: 1; transform: none; }
+
+.btn-cv {
+  position: fixed; /* Ou 'fixed' si tu veux qu'il reste visible en scrollant */
+  top: 20px;
+  left: 80px;
+  background-color: #2E5E3C; 
+  color: black; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  text-decoration: none; 
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  z-index: 1000; 
+}
+
+/* Effet au survol de la souris */
+.btn-cv:hover {
+  background-color: #147D39; 
+}
