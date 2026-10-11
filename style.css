@@ -32,7 +32,15 @@ section{padding:4.5rem 0;border-bottom:1px solid var(--line)}
 @keyframes flow{to{stroke-dashoffset:-104}}
 .lead{max-width:40rem;font-size:1.25rem;color:var(--muted);margin:1.25rem 0 2.5rem}
 .summary{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:1rem}
-.summary a{display:block;height:100%;padding:1rem 1.1rem;background:var(--surface);border:1px solid var(--line);border-radius:6px;color:var(--ink);text-decoration:none}
+.summary a{
+  display:block;height:100%;padding:1rem 1.1rem;
+  background:var(--surface);                                         
+  background:color-mix(in srgb, var(--surface) 55%, transparent);   
+  -webkit-backdrop-filter:blur(6px);
+  backdrop-filter:blur(6px);
+  border:1px solid var(--line);border-radius:6px;
+  color:var(--ink);text-decoration:none;
+}
 .summary a:hover{border-color:var(--accent)}
 .summary strong{display:block;font-family:var(--serif);margin-bottom:.3rem}
 .summary span{color:var(--muted);font-size:.95rem}
@@ -67,8 +75,8 @@ body, .bar, .card, .summary a, #theme, section, .item {
 
 .btn-cv {
   position: fixed; /* Ou 'fixed' si tu veux qu'il reste visible en scrollant */
-  top: 15px;
-  left: 250px;
+  top: 10px;
+  left: 1700px;
   background-color: #007bff; 
   color: white; 
   padding: 10px 15px; 
