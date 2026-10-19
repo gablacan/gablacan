@@ -105,11 +105,11 @@ body, .bar, .card, .summary a, #theme, section, .item {
 }
 
 .video{
-  max-width:44rem;
+  max-width:22rem;
   margin:0 0 2.5rem;
   aspect-ratio:16/9;
-  border:1px solid var(--line);
-  border-radius:6px;
+  border:2px solid var(--line);
+  border-radius:9px;
   overflow:hidden;
   background:var(--surface);
 }
