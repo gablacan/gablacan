@@ -1,5 +1,5 @@
 ## Hi there 👋
-
+I'm new and happy to discover this new world ! Actually creating my first e-portfolio...
 <!--
 **gablacan/gablacan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
