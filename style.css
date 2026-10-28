@@ -47,7 +47,7 @@ section{padding:4.5rem 0;border-bottom:1px solid var(--line)}
 .item{display:grid;grid-template-columns:9rem 1fr;gap:1rem;padding:1.1rem 0;border-top:1px solid var(--line)}
 .item time{color:var(--muted);font-size:.95rem}
 .item p{margin:.3rem 0 0;color:var(--muted)}
-
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:1.5rem}    
 .card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:1rem}
 .card img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:var(--line);border-radius:4px;margin-bottom:.9rem}
 .card p{color:var(--muted);margin:.4rem 0 .8rem}
@@ -126,8 +126,8 @@ body, .bar, .card, .summary a, #theme, section, .item {
 .track::-webkit-scrollbar{display:none}
 .track .card{
   flex:0 0 var(--cw);scroll-snap-align:center;scroll-snap-stop:always;
-  opacity:.45;transform:scale(.94);
-  transition:opacity .3s ease, transform .3s ease;
+  opacity:.40;transform:scale(.7);
+  transition:opacity .5s ease, transform .5s ease;
 }
 .track .card.active{opacity:1;transform:none}
 
