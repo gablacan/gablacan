@@ -101,7 +101,7 @@ if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
     piston.setAttribute('y', y - 12);
     gas.setAttribute('height', Math.max(0, y - 12 - TOP));
 
-    const k = Math.floor(a / Math.PI) % 4;
+    const k = ((Math.floor(a / Math.PI) % 4) + 4) % 4;
     if (k !== lastPhase) {
       lastPhase = k;
       gas.setAttribute('class', 'gas ' + PHASES[k][1]);
@@ -123,7 +123,7 @@ if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
     .observe(svg);
 
   function frame(now) {
-    const dt = Math.min((now - last) / 1000, 0.05);
+    const dt = Math.max(0, Math.min((now - last) / 1000, 0.05));
     last = now;
     if (visible) { a = (a + dt * CYCLE / DURATION) % CYCLE; draw(a); }
     requestAnimationFrame(frame);
