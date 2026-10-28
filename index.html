@@ -73,17 +73,34 @@
 
   <figure class="engine">
     <svg id="engine" viewBox="0 0 300 330" role="img"
-         aria-label="Animation d'un moteur à quatre temps : piston, bielle et vilebrequin">
-      <circle class="orbit" cx="150" cy="270" r="34"/>
-      <rect id="gas" class="gas intake" x="110" y="102" width="80" height="30"/>
-      <line id="rod" class="rod" x1="150" y1="236" x2="150" y2="136"/>
-      <rect id="piston" class="piston" x="112" y="124" width="76" height="24" rx="3"/>
-      <path class="wall" d="M108 222 V100 H192 V222"/>
-      <line id="crank" class="crank" x1="150" y1="270" x2="150" y2="236"/>
-      <circle class="hub" cx="150" cy="270" r="7"/>
-      <circle id="cpin" class="pin" cx="150" cy="236" r="5"/>
-      <circle id="ppin" class="pin" cx="150" cy="136" r="3.5"/>
-    </svg>
+     aria-label="Animation d'un moteur à quatre temps : piston, bielle, vilebrequin, soupapes et bougie">
+  <!-- conduits d'admission (gauche) et d'échappement (droite) -->
+  <path class="duct" d="M118 72 V54 H56 V68 H140 V72"/>
+  <path class="duct" d="M182 72 V54 H244 V68 H160 V72"/>
+  <!-- culasse et parois du bloc -->
+  <rect class="part" x="92" y="72" width="116" height="28" rx="3"/>
+  <rect class="part" x="92" y="100" width="16" height="126"/>
+  <rect class="part" x="192" y="100" width="16" height="126"/>
+  <!-- bougie -->
+  <rect class="part" x="145" y="50" width="10" height="22" rx="2"/>
+  <line class="rod" x1="150" y1="72" x2="150" y2="102" style="stroke-width:2.5"/>
+  <!-- carter -->
+  <path class="duct" d="M92 226 V292 Q92 312 112 312 H188 Q208 312 208 292 V226"/>
+  <circle class="orbit" cx="150" cy="270" r="34"/>
+  <!-- gaz -->
+  <rect id="gas" class="gas intake" x="110" y="102" width="80" height="30"/>
+  <!-- soupapes -->
+  <g id="vin" class="valve"><line x1="129" y1="60" x2="129" y2="100"/><rect x="119" y="99" width="20" height="4" rx="1"/></g>
+  <g id="vex" class="valve"><line x1="171" y1="60" x2="171" y2="100"/><rect x="161" y="99" width="20" height="4" rx="1"/></g>
+  <!-- mécanisme -->
+  <line id="rod" class="rod" x1="150" y1="236" x2="150" y2="136"/>
+  <rect id="piston" class="piston" x="112" y="124" width="76" height="24" rx="3"/>
+  <path class="wall" d="M108 226 V100 H192 V226"/>
+  <line id="crank" class="crank" x1="150" y1="270" x2="150" y2="236"/>
+  <circle class="hub" cx="150" cy="270" r="7"/>
+  <circle id="cpin" class="pin" cx="150" cy="236" r="5"/>
+  <circle id="ppin" class="pin" cx="150" cy="136" r="3.5"/>
+</svg>
     <figcaption id="phase">Admission</figcaption>
   </figure>
 </div>
