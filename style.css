@@ -47,7 +47,7 @@ section{padding:4.5rem 0;border-bottom:1px solid var(--line)}
 .item{display:grid;grid-template-columns:9rem 1fr;gap:1rem;padding:1.1rem 0;border-top:1px solid var(--line)}
 .item time{color:var(--muted);font-size:.95rem}
 .item p{margin:.3rem 0 0;color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:1.5rem}
+
 .card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:1rem}
 .card img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:var(--line);border-radius:4px;margin-bottom:.9rem}
 .card p{color:var(--muted);margin:.4rem 0 .8rem}
@@ -114,3 +114,41 @@ body, .bar, .card, .summary a, #theme, section, .item {
   background:var(--surface);
 }
 .video iframe{width:100%;height:100%;border:0;display:block}
+
+
+.carousel{--cw:min(34rem,78vw)}
+.track{
+  position:relative;display:flex;gap:1.25rem;
+  overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;
+  padding:.75rem calc((100% - var(--cw)) / 2);
+  scrollbar-width:none;
+}
+.track::-webkit-scrollbar{display:none}
+.track .card{
+  flex:0 0 var(--cw);scroll-snap-align:center;scroll-snap-stop:always;
+  opacity:.45;transform:scale(.94);
+  transition:opacity .3s ease, transform .3s ease;
+}
+.track .card.active{opacity:1;transform:none}
+
+.ctrl{display:flex;justify-content:center;align-items:center;gap:1.25rem;margin-top:1.5rem}
+.arrow{
+  display:grid;place-items:center;width:2.5rem;height:2.5rem;
+  border:1px solid var(--line);border-radius:50%;
+  background:var(--surface);color:var(--ink);cursor:pointer;
+  transition:border-color .2s ease, opacity .2s ease;
+}
+.arrow:hover:not(:disabled){border-color:var(--accent)}
+.arrow:disabled{opacity:.35;cursor:default}
+.dots{display:flex;gap:.6rem}
+.dots button{
+  width:.65rem;height:.65rem;padding:0;border:0;border-radius:999px;
+  background:var(--line);cursor:pointer;
+  transition:width .25s ease, background-color .25s ease;
+}
+.dots button[aria-current="true"]{width:1.6rem;background:var(--accent)}
+
+@media (prefers-reduced-motion:reduce){
+  .track{scroll-behavior:auto}
+  .track .card,.dots button{transition:none}
+}
