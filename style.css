@@ -14,7 +14,7 @@ h2{font-size:1.9rem;margin-bottom:1.5rem}
 h3{font-size:1.15rem}
 .sub{margin:2.5rem 0 1rem}
 .bar{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:1.5rem;padding:.8rem 1.5rem;background:var(--bg);border-bottom:1px solid var(--line)}
-.logo{font:600 1.1rem var(--serif);color:var(--ink);text-decoration:none}
+.logo{font:600 1.1rem var(--serif);color:var(--ink);text-decoration:none;margin-right:auto}
 nav{display:flex;gap:1.25rem}
 nav a{color:var(--muted);text-decoration:none}
 nav a:hover{color:var(--ink)}
