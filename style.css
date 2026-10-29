@@ -153,29 +153,3 @@ body, .bar, .card, .summary a, #theme, section, .item {
   .track .card,.dots button{transition:none}
 }
 
-.duo{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:1.5rem;align-items:center;margin:0 0 2.5rem}
-.duo .video{max-width:none;margin:0}
-
-.engine{margin:0;padding:1rem;background:var(--surface);border:1px solid var(--line);border-radius:6px;text-align:center}
-.engine svg{display:block;width:100%;max-height:20rem;margin:0 auto}
-.engine figcaption{margin-top:.5rem;color:var(--muted);font-size:.95rem}
-
-.engine .wall{fill:none;stroke:var(--muted);stroke-width:3;stroke-linejoin:round}
-.engine .orbit{fill:none;stroke:var(--line);stroke-width:1.5;stroke-dasharray:4 5}
-.engine .rod,.engine .crank{stroke:var(--ink);stroke-width:5;stroke-linecap:round}
-.engine .piston{fill:var(--surface);stroke:var(--ink);stroke-width:2}
-.engine .hub{fill:var(--ink)}
-.engine .pin{fill:var(--surface);stroke:var(--ink);stroke-width:2}
-
-.gas{transition:fill .3s ease, opacity .3s ease}
-.gas.intake{fill:var(--accent);opacity:.25}
-.gas.compression{fill:var(--accent);opacity:.55}
-.gas.power{fill:#e8833a;opacity:.75}
-.gas.exhaust{fill:var(--muted);opacity:.3}
-
-@media (max-width:760px){.duo{grid-template-columns:1fr}}
-
-.engine .part{fill:var(--surface);stroke:var(--muted);stroke-width:2}
-.engine .duct{fill:none;stroke:var(--muted);stroke-width:2.5;stroke-linejoin:round}
-.engine .valve{stroke:var(--ink);stroke-width:3;stroke-linecap:round;transition:transform .15s ease}
-.engine .valve rect{fill:var(--ink);stroke:none}
