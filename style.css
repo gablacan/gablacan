@@ -153,3 +153,9 @@ body, .bar, .card, .summary a, #theme, section, .item {
   .track .card,.dots button{transition:none}
 }
 
+.card.ongoing{border:1px dashed var(--accent);background:transparent}
+.status{
+  display:inline-block;margin-bottom:.6rem;padding:.1rem .65rem;
+  border:1px dashed var(--accent);border-radius:999px;
+  color:var(--accent);font-size:.85rem;
+}
