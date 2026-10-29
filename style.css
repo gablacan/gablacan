@@ -83,7 +83,6 @@ body, .bar, .card, .summary a, #theme, section, .item {
   transition:background-color .25s ease, color .25s ease;
 }
 .cv:hover{background:var(--accent);color:var(--bg)}
-}
 /*A porpos */
 .intro{max-width:42rem;color:var(--muted);margin:0 0 2.5rem}
 .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:2.5rem 3rem}
@@ -160,7 +159,7 @@ body, .bar, .card, .summary a, #theme, section, .item {
   color:var(--accent);font-size:.85rem;
 }
 
-.in{
+.linkedin{
   display:inline-flex;align-items:center;gap:.4rem;
   margin-right:auto;
   padding:.3rem .8rem;
@@ -169,7 +168,7 @@ body, .bar, .card, .summary a, #theme, section, .item {
   text-decoration:none;font-size:.9rem;
   transition:border-color .2s ease, color .2s ease;
 }
-.in:hover{border-color:var(--accent);color:var(--accent)}
-.in i{font-size:1.1rem}
-@media (max-width:640px){.in span{display:none}.in{padding:.35rem .5rem}}
+.linkedin:hover{border-color:var(--accent);color:var(--accent)}
+.linkedin i{font-size:1.1rem}
+@media (max-width:640px){.linkedin span{display:none}.linkedin{padding:.35rem .5rem}}
 
