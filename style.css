@@ -49,7 +49,16 @@ section{padding:4.5rem 0;border-bottom:1px solid var(--line)}
 .item p{margin:.3rem 0 0;color:var(--muted)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:1.5rem}    
 .card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:1rem}
-.card img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:var(--line);border-radius:4px;margin-bottom:.9rem}
+
+.card img{
+  display:block;
+  width:100%;
+  height:auto;
+  border-radius:4px;
+  margin-bottom:.9rem;
+  background:var(--line);
+}
+
 .card p{color:var(--muted);margin:.4rem 0 .8rem}
 .links{list-style:none;padding:0;margin:1.5rem 0 0;display:flex;flex-wrap:wrap;gap:.5rem 2rem}
 footer{padding:2rem 0;color:var(--muted);font-size:.9rem}
@@ -104,10 +113,10 @@ body, .bar, .card, .summary a, #theme, section, .item {
 }
 
 .video{
-  max-width:16rem;
-  margin:3rem auto 2.5rem;;
+  max-width:40rem;
+  margin:4rem auto 3rem;;
   aspect-ratio:16/9;
-  border:2px solid var(--line);
+  border:3px solid var(--line);
   border-radius:9px;
   overflow:hidden;
   background:var(--surface);
