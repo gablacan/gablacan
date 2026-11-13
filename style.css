@@ -55,6 +55,9 @@ section{padding:4.5rem 0;border-bottom:1px solid var(--line)}
 .flow path:nth-of-type(even){animation-duration:9s}
 .flow .body{fill:var(--bg);stroke:var(--accent);stroke-width:2;stroke-dasharray:none;animation:none}
 @keyframes flow{to{stroke-dashoffset:-104}}
+.flow .solid{fill:none;stroke:var(--accent);stroke-width:1.5;stroke-dasharray:none;animation:none}
+.flow .spin{transform-origin:0 0;animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(-360deg)}}
 .lead{max-width:40rem;font-size:1.25rem;color:var(--muted);margin:1.25rem 0 2.5rem}
 .who{display:flex;align-items:center;gap:2rem;margin-bottom:2.5rem}
 .who .lead{margin-bottom:0}
@@ -196,4 +199,5 @@ body, .bar, .card, .summary a, #theme, section, .item {
   .track{scroll-behavior:auto}
   .track .card,.dots button{transition:none}
   .hero .wrap > *{animation:none}
+  .flow .spin{animation:none}
 }
