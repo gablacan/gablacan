@@ -34,15 +34,39 @@
 <main>
 <section id="home" class="hero">
   <svg class="flow" viewBox="0 0 800 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-    <path d="M0 60 C250 60 330 48 400 50 S600 66 800 70"/>
-    <path d="M0 95 C200 95 290 80 360 78 S600 105 800 112"/>
-    <path d="M0 128 C150 128 230 100 330 96 S520 118 600 140 S700 150 800 150"/>
-    <path d="M0 172 C150 172 240 190 340 188 S520 192 600 185 S700 175 800 175"/>
-    <path d="M0 215 C250 215 330 232 400 232 S600 220 800 218"/>
-    <path d="M0 255 C250 255 300 268 400 268 S600 258 800 256"/>
-    <path class="body" transform="rotate(8 400 150)"
-          d="M270 150 C275 125 310 112 350 114 C420 118 490 140 530 150 C490 154 420 162 350 162 C310 162 275 165 270 150 Z"/>
-  </svg>
+  <!-- écoulement -->
+  <path d="M0 56 C260 56 420 52 600 58 S740 70 800 74"/>
+  <path d="M0 82 C240 82 400 80 560 76 S700 88 800 94"/>
+  <path d="M0 126 C170 126 300 148 372 138 S440 114 500 110 S580 96 640 98 S740 112 800 116"/>
+  <path d="M0 198 C110 198 190 196 240 192 S310 178 360 160 S420 132 460 134 S520 126 580 112 S720 118 800 124"/>
+  <path d="M0 232 C200 232 330 232 400 232 S560 226 640 228 S740 234 800 234"/>
+  <path d="M0 218 H190"/>
+  <path d="M0 241 H800"/>
+
+  <!-- aileron avant -->
+  <path class="body" d="M196 212 L262 214 L272 232 L196 232 Z"/>
+  <path class="solid" d="M204 225 C224 221 250 221 266 225"/>
+  <path class="solid" d="M204 219 C224 215 246 215 258 218"/>
+
+  <!-- carrosserie, casque et halo -->
+  <path class="body" d="M214 214 L310 198 C340 192 352 180 385 173 L428 172 L448 152 L470 152 L482 172 C520 182 560 190 612 196 L612 210 L560 216 L300 224 L232 222 Z"/>
+  <circle class="body" cx="402" cy="163" r="10"/>
+  <path class="solid" d="M368 173 C372 152 408 146 428 172"/>
+
+  <!-- aileron arrière -->
+  <path class="solid" d="M592 160 L598 197"/>
+  <path class="body" d="M568 134 L634 130 L640 170 L574 178 Z"/>
+  <path class="solid" d="M578 160 C596 153 616 154 634 160"/>
+  <path class="solid" d="M578 146 C596 139 616 140 634 146"/>
+
+  <!-- roues -->
+  <circle class="body" cx="285" cy="207" r="33"/>
+  <circle class="solid" cx="285" cy="207" r="20"/>
+  <g transform="translate(285 207)"><g class="spin"><path class="solid" d="M-18 0H18M0 -18V18M-13 -13L13 13M-13 13L13 -13"/></g></g>
+  <circle class="body" cx="525" cy="204" r="36"/>
+  <circle class="solid" cx="525" cy="204" r="22"/>
+  <g transform="translate(525 204)"><g class="spin"><path class="solid" d="M-20 0H20M0 -20V20M-14 -14L14 14M-14 14L14 -14"/></g></g>
+</svg>
   <div class="wrap">
     <div class="who">
       <img class="photo" src="IMG_7462.jpg" alt="Portrait of Gabin Lacan" width="144" height="144">
